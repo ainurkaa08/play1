@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.header{
+			width: 1500px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+		
+		}
+		.charts-conatiner{
+			width: 800px;
+			height: 740px;
+			background-color: aliceblue;
+			margin: auto;
+		}
+
+		.charts-sort{
+           width: 800px;
+		   margin-top: 10px;
+		   height: 80px;
+		   background-color: aliceblue; 
+		   display: flex;
+		}
+
+		.charts-up{
+		   width: 800px;
+		   margin-top: 10px;
+		   height: 80px;
+		    
+		   background-color: palegreen;
+		   display: flex;
+		}
+		
+	
+		.charts-new{
+	       width: 800px;
+		   margin-top: 10px;
+		   height: 80px;
+		  
+		   background-color: palegoldenrod;
+		   display: flex;	
+		}
+
+		.charts-new{
+			width: 800px;
+		   height: 80px;
+		   margin-top: 10px;
+		
+		   background-color: palegoldenrod;
+		   display: flex;	
+		}
+
+		.charts-up{
+			width: 800px;
+		   height: 80px;
+		   margin-top: 10px;
+		  
+		   background-color: palegreen;
+		   display: flex;
+		}
+
+		.charts-down{
+			width: 800px;
+		   height: 80px;
+		   margin-top: 10px;
+		   
+		   background: linear-gradient(to left, rgb(70, 70, 121), blue, white, grey);
+		   display: flex;
+		}
+
+		.charts-new{
+			width: 800px;
+		   height: 80px;
+		   margin-top: 10px;
+	
+		   background: linear-gradient(to left, pink, white, palevioletred,palegoldenrod, grey);
+		   display: flex;
+		}
+
+		.charts-up{
+			width: 800px;
+		   height: 80px;
+		   margin-top: 10px;
+		   background: linear-gradient(to left,green, white, rgb(81, 81, 218),palegreen,grey);
+		   display: flex;  
+		}
+
+		.charts-rank{
+           width: 100px;
+		   height: 80px;
+		}
+
+		.charts-info{
+            width: 400px;
+		   height: 80px;
+		}
+
+		.charts-button{
+            width: 200px;
+		   height: 80px;
+		}
+
+		.charts-img{
+			width: 100px;
+		   height: 80px;
+		}
+
+		.box-logo{
+			width: 200px;
+		   height: 60px;
+		   background-color: grey;
+	
+		}
+
+		.box-links{
+			width: 550px;
+		   height: 60px;
+		   background-color: grey;
+		}
+
+		.box-buttons{
+			
+		   display: flex;
+		   gap: 10px;
+		}
+
+		.buttonBlue{
+			width: 100px;
+			height: 30px;
+			background-color: blue;
+			margin-left: 80px;
+		}
+
+		.buttonGreen{
+			width: 100px;
+			height: 30px;
+			background-color: green;
+			margin-left: 80px;
+		}
+
+		.p{
+			color: rgb(30, 54, 124);
+		}
+
+		.p2{
+			color: aliceblue;
+		}
+
+		.Up{
+			color: green;
+		}
+
+		.New{
+			color: orange;
+		}
+
+		.Down{
+			color: red;
+		}
+
+		.logo{
+			width: 150px;
+		   height: 60px;
+		}
+
+		.THIS{
+        width: 100px;
+		height: 40px;
+		background-color: yellow;
+	    }
+
+		.LAST{
+	    width: 100px;
+		height: 40px;
+		background-color: red;
+		}
+
+		.PEAK{
+		width: 100px;
+		height: 40px;
+		background-color: green;
+		}
+
+		.DURATION{
+		width: 100px;
+		height: 40px;
+		background-color: purple;
+		}
+
+		.Sub{
+			background-color: purple;
+		}
+
+		.bl{
+			color: aliceblue;
+		}
+
+		.vd{
+			color: red;
+		}
+
+		.ph{
+			color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	
+    <div class="header">
+		<div class="box-logo">
+			<img  class="logo"  src="logo.png" alt="">
+		</div>
+
+	    <div class="box-links">
+			<a  class="bl"  href="https://www.billboard.com/charts/hot-100/"> CHARTS</a>
+            <a  class="bl"  href="https://www.billboard.com/music/awards/grammys-2025-winners-complete-list-1235889365/">NEWS</a>
+            <a  class="vd"  href="https://www.youtube.com/watch?v=CqHizxUAIOw">VIDEO</a>
+            <a  class="ph"  href="https://www.billboard.com/photos/grammys-red-carpet-photos-2025-1235890197/1-charli-xcx-grammys-awards-rc-1-2025-billboard-1548/">PHOTOS</a>
+		
+		   <button class="Sub">Subscribe</button>
+		</div>
+
+
+		
+	</div>
+
+
+
+    <div class="charts-conatiner">
+	  <div  class="charts-sort">
+		<div class="box-buttons">
+			<button class="THIS">THIS WEEK</button>
+			<button class="LAST">LAST WEEK</button>
+			<button class="PEAK">PEAK</button>
+			<button class="DURATION">DURATION</button>
+		 </div>
+	  </div>
+
+	  <div  class="charts-up">
+		   <div class="charts-rank">
+			 <h2>1</h2>
+			 <h3 class="Up"> Up</h3>
+		   </div>
+		   <div class="charts-info">
+			  <h3 class="p"> Savage Love (Laxet - Siren Beat)</h3>
+			<p class="p2">Jaws 685 х Jason Derulo х BTS</p>
+		   </div>
+		   <div class="charts-button">
+			   <button class="buttonBlue">Воспроизвести</button>
+		   </div>
+		   <div class="charts-img">
+			    <img class="charts-img" src="1.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-new">
+		   <div class="charts-rank">
+			<h2>2</h2>
+			<h3 class="New">New</h3>
+		   </div>
+		   <div class="charts-info">
+			<h3 class="p"> Dynamite</h3>
+			<p class="p2"> BTS</p>
+		   </div>
+		   <div class="charts-button">
+			    <button class="buttonGreen">Купить</button>
+		   </div>
+		   <div class="charts-img">
+			    <img class="charts-img" src="2.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-new">
+		   <div class="charts-rank">
+		    <h2>3</h2>
+			<h3 class="New">New</h3>
+		   </div>
+		   <div class="charts-info">
+			 <h3 class="p"> WAP</h3>
+			 <p class="p2"> Cardi B featuring Megan Thee Stallion</p>
+		   </div>
+		   <div class="charts-button">
+			  <button class="buttonGreen"> Купить</button>
+		   </div>
+		   <div class="charts-img">
+		    	<img class="charts-img" src="3.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-up">
+		   <div class="charts-rank">
+              <h2>4</h2>
+               <h3 class="Up">Up</h3>
+		   </div>
+		   <div class="charts-info">
+			<h3 class="p"> Mood</h3>
+			<p class="p2"> 24kGoldn featuring iann dior</p>
+		   </div>
+		   <div class="charts-button">
+		    	<button class="buttonGreen"> Купить</button>
+		   </div>
+		   <div class="charts-img">
+		    	<img class="charts-img" src="4.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-down">
+		   <div class="charts-rank">
+              <h2>5</h2>
+              <h3 class="Down"> Down</h3>
+		   </div>
+		   <div class="charts-info">
+			<h3 class="p"> Laygh Now Cry Letter</h3>
+			 <P class="p2"> Drake featuring Lil Durk</P>
+		   </div>
+		   <div class="charts-button">
+		     	<button class="buttonGreen"> Купить</button>
+		   </div>
+		   <div class="charts-img">
+		    	<img class="charts-img" src="5.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-new">
+		   <div class="charts-rank">
+              <h2>6</h2>
+              <h3 class="New">New</h3>
+		   </div>
+		   <div class="charts-info">
+			<h3 class="p"> Blinding Lights</h3>
+			<p class="p2"> The Weekend</p>
+		   </div>
+		   <div class="charts-button">
+			    <button class="buttonBlue">Воспроизвести</button>
+		   </div>
+		   <div class="charts-img">
+		    	<img class="charts-img" src="6.jpg" alt="">
+		   </div>
+	  </div>
+
+	  <div  class="charts-up">
+	    	<div class="charts-rank">
+                <h2>7</h2>
+                 <h3 class="Up">Up</h3>
+			</div>
+		    <div class="charts-info">
+				<h3 class="p"> Rockstar</h3>
+				<p class="p2"> DaBaby Featuring Roddy Ricch</p>
+			</div>
+		    <div class="charts-button">
+				<button class="buttonBlue">Воспроизвести</button>
+			</div>
+		    <div class="charts-img">
+				<img class="charts-img" src="7.jpg" alt="">
+			</div>
+	  </div> 
+
+  </div>
+  
+</body>
+</html>
